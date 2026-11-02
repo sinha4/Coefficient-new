@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap");
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #17233c;
+  background: #f5f7fb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.page {
+  display: grid;
+  min-height: 100vh;
+  padding: 24px;
+  place-items: center;
+  background:
+    radial-gradient(ellipse at 18% 12%, rgb(183 221 255 / 45%), transparent 34%),
+    radial-gradient(ellipse at 88% 90%, rgb(222 206 255 / 35%), transparent 36%),
+    #f5f7fb;
+}
+
+.card {
+  width: min(100%, 620px);
+  padding: clamp(32px, 7vw, 64px);
+  border: 1px solid rgb(224 230 241 / 85%);
+  border-radius: 24px;
+  background: rgb(255 255 255 / 88%);
+  box-shadow: 0 24px 80px rgb(29 50 91 / 9%);
+}
+
+.eyebrow {
+  color: #6678c9;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+h1 {
+  margin: 18px 0 12px;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(2.2rem, 7vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  line-height: 1.08;
+}
+
+.intro {
+  max-width: 420px;
+  margin: 0;
+  color: #6b7890;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.status {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin-top: 36px;
+  padding: 18px;
+  border: 1px solid #e8ecf4;
+  border-radius: 14px;
+  background: #fbfcfe;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  flex: 0 0 auto;
+  margin-top: 5px;
+  border-radius: 50%;
+  background: #d5a333;
+  box-shadow: 0 0 0 4px #fff3d4;
+}
+
+.status-dot-ok {
+  background: #35a878;
+  box-shadow: 0 0 0 4px #dcf5e9;
+}
+
+.status-dot-error {
+  background: #d75757;
+  box-shadow: 0 0 0 4px #fde7e7;
+}
+
+.status strong {
+  font-size: 0.93rem;
+}
+
+.status p {
+  margin: 4px 0 0;
+  color: #7a879d;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  align-items: center;
+  margin-top: 28px;
+  color: #8a96aa;
+  font-size: 0.8rem;
+}
+
+.footer code {
+  color: #4c5a73;
+  font-size: 0.8rem;
+}
+
+.divider {
+  color: #ccd2de;
+}
